@@ -1,0 +1,72 @@
+li{
+  transition: all 0.5s;
+}
+a{
+  transition: all 0.5s;
+}
+
+li:hover{
+  transform: translateY(-5px);
+  color: black;
+}
+
+
+a:hover{
+  transform: translateY(-5px);
+}
+
+@keyframes slideLeft{
+  from{
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateY(0);
+
+  }
+}
+
+@keyframes slideUp {
+  from{
+    transform: translateY(10px);
+  }
+  to{
+    transform: translateY(0);
+  }
+
+}
+
+
+
+
+p,img,.card,li,a,h4{
+  animation: slideUp 0.2s linear 1 normal;
+}
+p,img,.card,li,a,h4{
+  animation: slideUp 0.3s linear 1 normal;
+}
+
+.display-4,h1{
+  animation: slideLeft 0.3s linear 1 normal;
+}
+
+::selection{
+  color: black;
+  font-weight: 100;
+  background: white;
+}
+
+.btn{
+  transition: all 0.5s;
+}
+.btn:hover{
+  color: gray;
+  background-color: white;
+  transform: translateY(-5px);
+}
+.images{
+  transition: all 0.5s;
+}
+
+.images:hover{
+  transform: translateX(20px);
+}
